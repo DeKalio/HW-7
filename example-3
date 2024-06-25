@@ -1,0 +1,19 @@
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+
+    //  the area of the circle
+    getArea() {
+        return Math.PI * this.radius * this.radius;
+    }
+
+    // perimeter (circumference) of the circle
+    getPerimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
+let circy = new Circle(11);
+console.log(circy.getArea()); // 380.132711084365
+console.log(circy.getPerimeter()); // 69.11503837897544
